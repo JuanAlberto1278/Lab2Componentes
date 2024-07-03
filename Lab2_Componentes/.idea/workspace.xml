@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b0d272c-4d59-4d83-9083-e0469fefef5d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Connection/Conexion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/TareaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAOs/TareaDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/TareaModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/ConsoleView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,16 +52,5 @@
       <updated>1719970966857</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

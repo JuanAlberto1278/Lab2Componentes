@@ -16,7 +16,7 @@ public class TareaDao {
     }
 
     public void agregarTarea(TareaModel tarea) throws SQLException {
-        String query = "INSERT INTO `tareas`(`nombre`, `descripcion`, `prioridad`, `fechaVencimiento`) VALUES (?, ?, ?, ?)";
+        String query = "INSERT INTO `JA_DR_AP_tareas`(`nombre`, `descripcion`, `prioridad`, `fechaVencimiento`) VALUES (?, ?, ?, ?)";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setString(1, tarea.getNombre());
             stmt.setString(2, tarea.getDescripcion());
@@ -27,7 +27,7 @@ public class TareaDao {
     }
 
     public void actualizarTarea(TareaModel tarea) throws SQLException {
-        String query = "UPDATE `tareas` SET `nombre` = ?, `descripcion` = ?, `prioridad` = ?, `fechaVencimiento` = ? WHERE `id` = ?";
+        String query = "UPDATE `JA_DR_AP_tareas` SET `nombre` = ?, `descripcion` = ?, `prioridad` = ?, `fechaVencimiento` = ? WHERE `id` = ?";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setString(1, tarea.getNombre());
             stmt.setString(2, tarea.getDescripcion());
@@ -39,7 +39,7 @@ public class TareaDao {
     }
 
     public void eliminarTarea(int id) throws SQLException {
-        String query = "DELETE FROM `tareas` WHERE `id` = ?";
+        String query = "DELETE FROM `JA_DR_AP_tareas` WHERE `id` = ?";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setInt(1, id);
             stmt.executeUpdate();
@@ -47,7 +47,7 @@ public class TareaDao {
     }
 
     public TareaModel consultarTarea(int id) throws SQLException {
-        String query = "SELECT `id`, `nombre`, `descripcion`, `prioridad`, `fechaVencimiento` FROM `tareas` WHERE `id` = ?";
+        String query = "SELECT `id`, `nombre`, `descripcion`, `prioridad`, `fechaVencimiento` FROM `JA_DR_AP_tareas` WHERE `id` = ?";
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
             stmt.setInt(1, id);
             try (ResultSet rs = stmt.executeQuery()) {
